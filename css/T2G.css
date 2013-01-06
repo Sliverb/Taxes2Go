@@ -45,11 +45,6 @@ i{
 	/*background: url(../img/twitter_web_sprite_icons.png) no-repeat 0px 0px;*/
 }
 
-.default h2, .default h2 a, .default h2 a:visited{
-	color: #1080DD;
-	font-size: 21px;
-}
-
 #start-dom{
 	height: 100%;
 }
@@ -108,8 +103,16 @@ i{
 	background-color: #A50D0F;
 }
 
-.naviLink:hover .navHover{
+.navCenter .navActive{
+	background-color: #A50D0F;
+}
+
+.naviLink:hover.navHover{
 	left: 0;
+}
+
+.navHover{
+	z-index: 5;
 }
 
 .naviLogoLink{
@@ -219,7 +222,7 @@ i{
 }
 
 .subHeader{
-	height: 70px;
+	height: 62px;
 	background-color: #D8D8D8;
 }
 
@@ -288,7 +291,7 @@ i{
 	margin-bottom: 4px;
 }
 
-.title3{
+.title3, .titleh2, .titleh3{
 	color: #CC1013 !important;
 }
 
@@ -366,6 +369,7 @@ i{
 
 .curls {
 	position: relative;
+	text-transform: uppercase;
 }
 
 .curls::before {
@@ -384,7 +388,6 @@ i{
 	bottom: 14px;
 	background: transparent;
 	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
-	z-index: -1;
 }
 
 .curls::after {
@@ -403,4 +406,98 @@ i{
 
 .tabs{
 	overflow: hidden;
+}
+
+.tabs li {
+	float: left;
+}
+
+.tabs a {
+	float: left;
+	padding: 10px 20px;
+	margin-right: 2px;
+	color: #6C6D6C;
+	background-color: #E8E7E5;
+	font-size: 15px;
+	font-family: arial;
+	box-shadow: 0 -3px 4px rgba(0, 0, 0, 0.2) inset;
+	border-top: 1px solid #D0D0D0;
+	border-right: 1px solid #D0D0D0;
+	border-left: 1px solid #D0D0D0;
+	font-size: 13px;
+}
+
+.tabs a:hover {
+	color: #CC1013;
+}
+
+.tabCentered{
+	width: 670px;
+	margin: 0px auto;
+}
+
+.tabs a.tabActive {
+	color: #CC1013;
+	background-color: whitesmoke;
+	box-shadow: none;
+}
+
+.tabContent{
+	padding: 36px 0 40px;
+	box-shadow: 0 -3px 4px rgba(0, 0, 0, 0.15);
+}
+
+.tabMore{
+	display: inline-block;
+	text-align: left;
+}
+
+.titleh2{
+	margin-bottom: 20px;
+	font-size: 24px;
+	font-size: 1.5rem;
+	line-height: 1;
+}
+
+.titleh3{
+
+}
+
+.large-button {
+	display: inline-block;
+	padding: 21px 40px;
+	color: white;
+	font-size: 24px;
+	font-weight: 500;
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+	box-shadow: none;
+	border: none;
+	background-image: -moz-linear-gradient(top, #CC1013 0%, #A50D0F 100%);
+	background-image: -webkit-linear-gradient(top, #CC1013 0%, #A50D0F 100%);
+	background-image: -o-linear-gradient(top, #CC1013 0%, #A50D0F 100%);
+	background-image: -ms-linear-gradient(top, #CC1013 0%, #A50D0F 100%);
+	background-image: linear-gradient(to bottom, #CC1013 0%, #A50D0F 100%);
+}
+
+.large-button:hover {
+	color: white;
+	background-image: -moz-linear-gradient(top, #A50D0F 0%, #CC1013 100%);
+	background-image: -webkit-linear-gradient(top, #A50D0F 0%, #CC1013 100%);
+	background-image: -o-linear-gradient(top, #A50D0F 0%, #CC1013 100%);
+	background-image: -ms-linear-gradient(top, #A50D0F 0%, #CC1013 100%);
+	background-image: linear-gradient(to bottom, #A50D0F 0%, #CC1013 100%);
+}
+
+.large-button:visited{
+	color: white;
+}
+
+.callToAction {
+	margin-top: 20px;
+	padding: 16px 39px;
+	box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.7);
+}
+
+.ctaCenter{
+	text-align: center;
 }
