@@ -13,17 +13,10 @@
 	<meta name="MSSmartTagsPreventParsing" content="true" />
 	
 	<!-- THE CSS -->
-	<link rel="stylesheet" type="text/css" href="css/T2G.css"/> 
+	<link rel="stylesheet" type="text/css" href="../css/T2G.css"/> 
 
 	<!-- THE SCRIPT -->
 	<!-- <script type="text/javascript" src="CustomHome.js"></script> -->
-		<script type="text/javascript" src="js/jquery.js"></script>
-		<script type="text/javascript" src="js/fadeSlideShow.js"></script>
-		<script type="text/javascript">
-		jQuery(document).ready(function(){
-			jQuery('#slides').fadeSlideShow();
-		});
-		</script>	
 </head>
 
 <!-- THE BODY -->
@@ -42,7 +35,7 @@
 					</div> 				
 					<!-- The center elements on the top bar -->
 					<ul class="navCenter">		
-						<li class="litLab naviItem" style="display:block">
+						<li class="litLab naviItem navActive" style="display:block">
 							<a href="index.html" class="naviLogoLink naviLink">
 								<i class="naviImage"></i>
 								Services
@@ -76,32 +69,32 @@
 							<ul class="navHover">
 								<li><a class="hoverNaviLink" href="2"> Team </a></li>
 								<li><a class="hoverNaviLink" href="3"> Privacy Policy </a></li>
-								<li><a class="hoverNaviLink" href="4"> Disclaimer </a></li>	
-								<li><a class="hoverNaviLink" href="4"> Contact Us </a></li>								
+								<li><a class="hoverNaviLink" href="4"> Disclaimer </a></li>								
 							</ul>							
 						</li>		
 						<li class="litLab naviItem" style="display:block">
 							<a href="index.html" class="naviLogoLink naviLink">
 								<i class="naviImage"></i>
-								FAQ
-							</a>							
+								Help
+								<span class="downCaret"></span>
+							</a>
+							<ul class="navHover">
+								<li><a class="hoverNaviLink" href="1"> FAQ </a></li>
+								<li><a class="hoverNaviLink" href="2"> Contact Us </a></li>
+							</ul>							
 						</li>							
 					</ul>					
 
 					<!-- The right elements on the top bar -->
 					<ul class="navRight">		
-						<li class="dropDown naviItem" style="display:block">
-							<a class="dropDownLink naviLink" href="../Client/portal.php" id="AccountLink">
-								Portal
-								<span class="downCaret"></span>
-							</a>
-							<ul class="navHover">
-								<li><a class="hoverNaviLink" href="../Client/profile.php"> Profile </a></li>
-								<li><a class="hoverNaviLink" href="../Auth/logout.php"> Logout </a></li>
-							</ul>							
-						</li>												
 						<li class="dropDown naviItem" style="display:none">
-							<a class="dropDownLink naviLink" href="../Auth/login.php" id="signInLink">
+							<a class="dropDownLink naviLink" href="" id="AccountLink">
+								Account
+								<span class="caret"></span>
+							</a>					
+						</li>						
+						<li class="dropDown naviItem" style="display:block">
+							<a class="dropDownLink naviLink" href="" id="signInLink">
 								Login
 								<span class="rightCaret"></span>
 							</a>					
@@ -111,126 +104,100 @@
 			</div>
 		</div>
 		
-		<div class="banner">
-			<div class="bannerWide">					
-					<ul id="slides">
-						<li><img src="img/slide5.jpg"/></li> <!-- This is the last image in the slideshow -->
-						<li><img src="img/slide3.jpg"/></li>
-						<li><img src="img/slide2.jpg"/></li>
-						<li><img src="img/slide1.jpg"/></li> <!-- This is the first image in the slideshow -->
-					</ul>
-					<span class="mask left"></span>
-					<span class="mask right"></span>
-			</div>
-			<div class="bannerNormal">
-				<div class="bannerCentered">
-					<div class="pager">
-						<a id="fssNext" class="previous"></a>
-						<a id="fssPrev" class="next"></a>
-					</div>
-					<div class="bannerHeading">
-						<ul id="headings">
-							<li>
-								<h1>Bringing the<br>Farmers Market<br>to You</h1>
-							</li>
-						
-							<li style="opacity: 0;">
-								<h1>Direct from local farms within 48 hours of harvest</h1>
-							</li>
-						
-							<li style="opacity: 0;">
-								<h1>A collection of fresh produce from multiple farms</h1>
-							</li>
-						
-							<li style="opacity: 0;">
-								<h1>Order online with free delivery to your workplace</h1>
-							</li>
-							
-						</ul>
-						<a class="callToAction large-button" href="../Auth/login.php">Get Started</a>
-					</div>
+		
+		
+		<div class="subHeader headerCommon">
+			<div class="container">					
+				<div class="curls centeredCurl">
+					Services
 				</div>
-			</div>			
+			</div>
 			<div class="clear"></div>				
 		</div>
 		
 		<div id="page">
-		
+			<div class="tabs-bg">
+				<div class="tabs tabCentered" style="width:398px;">
+					<ul>
+						<li>
+							<a href="servicesOverview.html" class="tabActive">
+							   Overview
+							</a>
+						</li>					
+						<li>
+							<a href="individuals.html" class="">
+							   Individuals
+							</a>
+						</li>					
+						<li>
+							<a href="businesses.html" class="">
+							   Businesses
+							</a>
+						</li>					
+						<li>
+							<a href="payroll.html" class="">
+							   Payroll
+							</a>
+						</li>									
+					</ul>
+				</div>
+			</div>
+			
 			<div class="tabContent">
-				<div class="container">
 				<div class="centeredHighlights">
 					<div class="highlight ">
 						<div class="highlightImageContainer">
-							<img alt="" height="203" src="img/yourWay.png" width="203">
+							<a href="individuals.html">
+								<img alt="" height="203" src="../img/indi.png" width="203">
+							</a>
 						</div>
 						<div class="highlightTextContainer">
 							<div class="highlightTitles">
-								<h2 class="title3">Your Way</h2>
+								<a href="individuals.html">
+									<h2 class="title3">Individuals</h2>
+								</a>
 							</div>
 							<p>
-								To make filing your taxes as convenient as possible, we give you the choice of:
-							</p>
-							<p>
-								<span>﻿ </span>
-							</p>
-							<p>
-								- Face-to-Face
-							</p>
-							<p>
-								- Email
-							</p>
-							<p>
-								- Tel/Fax
-							</p>
-							<p>
-								- Online
-							</p>
-							<p>
-								- Mobile Service
+								While some think using a tax professional is expensive, the truth is you can’t afford not to use one. Each year taxpayers leave millions of their tax refund dollars unclaimed. Moreover, tax laws are complicated and change daily. Using a tax professional gives you the peace of mind that you have taken advantage of all the tax credits and deductions entitled to you. Keep in mind home based tax softwares are helpful, but will never be an adequate substitute for professional help.
 							</p>						
-							<div class="highlightLink">
-								<a class="link3" href="/yourWay.php">Learn more ...</a>
-							</div>
 						</div>
 					</div>
 					
 					<div class="highlight ">
 						<div class="highlightImageContainer">
-							<img alt="" height="203" src="img/taxRes.png" width="203">
+							<a href="businesses.html">
+								<img alt="" height="203" src="../img/buss.png" width="203">
+							</a>
 						</div>
 						<div class="highlightTextContainer">
 							<div class="highlightTitles">
-								<h2 class="title3">Tax Resources</h2>
+								<a href="businesses.html">
+									<h2 class="title3">Businesses</h2>
+								</a>
 							</div>
 							<p>
-								Never worry about managing your tax resources ever again. We will take good care of you and make sure you have quick access to anything that will get you your money back.
+								Each year, 1 out of 3 small businesses pay a penalty to the IRS because they miss a deadline or pay the wrong amount. By letting us take care of your tax obligations and payroll , you are can focus on running your business and avoid penalties. We provide accurate calculations and trusted advisers who will guide you through the process on a one-to-one basis.
 							</p>					
-							<div class="highlightLink">
-								<a class="link3" href="/taxResources.php">Learn more ...</a>
-							</div>
 						</div>
 					</div>
 					
 					<div class="highlight ">
 						<div class="highlightImageContainer">
-							<img alt="" height="203" src="img/Features_LiveTiles.png" width="203">
+							<a href="payroll.html">
+								<img alt="" height="203" src="../img/payRoll.png" width="203">
+							</a>
 						</div>
 						<div class="highlightTextContainer">
 							<div class="highlightTitles">
-								<h2 class="title3">Refer a Friend</h2>
+								<a href="payroll.html">
+									<h2 class="title3">Payroll</h2>
+								</a>
 							</div>
 							<p>
-								<strong> Earn $20 </strong>
-							</p>
-							<p>
-								Get money the easy way.  For each person you refer that completes a fully funded tax return, you earn $20. How much you earn is up to you, so the sky's the limit!
+								We offer weekly, bi-weekly, or monthly payroll assistance at whatever level you may need. We will provide you with accurate federal, state and local tax calculations for each pay period, and provide a detailed statement that shows pay and deductions for each employee. With this assistance, the employer will retain the responsibility of writing payroll checks as at when needed.
 							</p>					
-							<div class="highlightLink">
-								<a class="link3" href="/aboutUs.php">Learn more ...</a>
-							</div>
 						</div>
 					</div>				
-				</div>
 				</div>
 			</div>
 		</div>

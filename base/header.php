@@ -50,76 +50,74 @@ $page = $pathComponents[1];
 				<div class="container">
 					<!-- The left elements on the top bar -->
 					<div class="navLeft">
-						<a class="mainLogo" href="index.html">
+						<a class="mainLogo" href="../home.php">
 						TAXES2GO
 						</a>
 					</div> 				
 					<!-- The center elements on the top bar -->
 					<ul class="navCenter">		
 						<li class="litLab naviItem <? if ($section=="Services") echo "navActive" ?>" style="display:block">
-							<a href="index.html" class="naviLogoLink naviLink">
+							<a href="../Services/servicesOverview.php" class="naviLogoLink naviLink">
 								<i class="naviImage"></i>
 								Services
 								<span class="downCaret"></span>								
 							</a>
 							<ul class="navHover">
-								<li><a class="hoverNaviLink" href="1"> Individuals </a></li>
-								<li><a class="hoverNaviLink" href="2"> Businesses </a></li>
-								<li><a class="hoverNaviLink" href="3"> Payroll </a></li>
+								<li><a class="hoverNaviLink" href="../Services/individuals.php"> Individuals </a></li>
+								<li><a class="hoverNaviLink" href="../Services/businesses.php"> Businesses </a></li>
+								<li><a class="hoverNaviLink" href="../Services/payroll.php"> Payroll </a></li>
 							</ul>							
 						</li>
 						<li class="litLab naviItem <? if ($section=="Tax") echo "navActive" ?>" style="display:block">
-							<a href="index.html" class="naviLogoLink naviLink">
+							<a href="../Tax/taxOverview.php" class="naviLogoLink naviLink">
 								<i class="naviImage"></i>
 								Tax Resources
 								<span class="downCaret"></span>
 							</a>
 							<ul class="navHover">
-								<li><a class="hoverNaviLink" href="1"> IRS Forms/Docs </a></li>
-								<li><a class="hoverNaviLink" href="2"> Fedral Refund </a></li>
-								<li><a class="hoverNaviLink" href="3"> State Refund </a></li>
-								<li><a class="hoverNaviLink" href="4"> Tax News </a></li>
+								<li><a class="hoverNaviLink" href="../Tax/taxForms.php"> IRS Forms/Docs </a></li>
+								<li><a class="hoverNaviLink" href="../Tax/taxNews.php"> Tax News </a></li>
 							</ul>
 						</li>						
 						<li class="litLab naviItem <? if ($section=="About") echo "navActive" ?>" style="display:block">
-							<a href="index.html" class="naviLogoLink naviLink">
+							<a href="../About/aboutUs.php" class="naviLogoLink naviLink">
 								<i class="naviImage"></i>
 								About
 								<span class="downCaret"></span>
 							</a>
 							<ul class="navHover">
-								<li><a class="hoverNaviLink" href="2"> Team </a></li>
-								<li><a class="hoverNaviLink" href="3"> Privacy Policy </a></li>
-								<li><a class="hoverNaviLink" href="4"> Disclaimer </a></li>								
+								<li><a class="hoverNaviLink" href="../About/team.php"> Team </a></li>
+								<li><a class="hoverNaviLink" href="../About/privacy.php"> Privacy Policy </a></li>
+								<li><a class="hoverNaviLink" href="../About/disclaimer.php"> Disclaimer </a></li>	
+								<li><a class="hoverNaviLink" href="../About/contactUs.php"> Contact Us </a></li>
 							</ul>							
 						</li>		
 						<li class="litLab naviItem <? if ($section=="Help") echo "navActive" ?>" style="display:block">
-							<a href="index.html" class="naviLogoLink naviLink">
+							<a href="../Help/faq.php" class="naviLogoLink naviLink">
 								<i class="naviImage"></i>
-								Help
-								<span class="downCaret"></span>
-							</a>
-							<ul class="navHover">
-								<li><a class="hoverNaviLink" href="1"> FAQ </a></li>
-								<li><a class="hoverNaviLink" href="2"> Contact Us </a></li>
-							</ul>							
+								FAQ
+							</a>						
 						</li>							
 					</ul>					
 
 					<!-- The right elements on the top bar -->
-					<ul class="navRight">		
+					<ul class="navRight">			
 						<li class="dropDown naviItem" style="display:none">
-							<a class="dropDownLink naviLink" href="" id="AccountLink">
-								Account
-								<span class="caret"></span>
-							</a>					
-						</li>						
+							<a class="dropDownLink naviLink" href="../Client/portal.php" id="AccountLink">
+								Portal
+								<span class="downCaret"></span>
+							</a>
+							<ul class="navHover">
+								<li><a class="hoverNaviLink" href="../Client/profile.php"> Profile </a></li>
+								<li><a class="hoverNaviLink" href="../Auth/logout.php"> Logout </a></li>
+							</ul>							
+						</li>												
 						<li class="dropDown naviItem" style="display:block">
-							<a class="dropDownLink naviLink" href="" id="signInLink">
+							<a class="dropDownLink naviLink" href="../Auth/login.php" id="signInLink">
 								Login
 								<span class="rightCaret"></span>
 							</a>					
-						</li>					
+						</li>						
 					</ul>
 				</div>
 			</div>

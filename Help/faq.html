@@ -13,17 +13,10 @@
 	<meta name="MSSmartTagsPreventParsing" content="true" />
 	
 	<!-- THE CSS -->
-	<link rel="stylesheet" type="text/css" href="css/T2G.css"/> 
+	<link rel="stylesheet" type="text/css" href="../css/T2G.css"/> 
 
 	<!-- THE SCRIPT -->
 	<!-- <script type="text/javascript" src="CustomHome.js"></script> -->
-		<script type="text/javascript" src="js/jquery.js"></script>
-		<script type="text/javascript" src="js/fadeSlideShow.js"></script>
-		<script type="text/javascript">
-		jQuery(document).ready(function(){
-			jQuery('#slides').fadeSlideShow();
-		});
-		</script>	
 </head>
 
 <!-- THE BODY -->
@@ -76,11 +69,11 @@
 							<ul class="navHover">
 								<li><a class="hoverNaviLink" href="2"> Team </a></li>
 								<li><a class="hoverNaviLink" href="3"> Privacy Policy </a></li>
-								<li><a class="hoverNaviLink" href="4"> Disclaimer </a></li>	
-								<li><a class="hoverNaviLink" href="4"> Contact Us </a></li>								
+								<li><a class="hoverNaviLink" href="4"> Disclaimer </a></li>
+								<li><a class="hoverNaviLink" href="4"> Contact Us </a></li>
 							</ul>							
 						</li>		
-						<li class="litLab naviItem" style="display:block">
+						<li class="litLab naviItem navActive" style="display:block">
 							<a href="index.html" class="naviLogoLink naviLink">
 								<i class="naviImage"></i>
 								FAQ
@@ -111,126 +104,76 @@
 			</div>
 		</div>
 		
-		<div class="banner">
-			<div class="bannerWide">					
-					<ul id="slides">
-						<li><img src="img/slide5.jpg"/></li> <!-- This is the last image in the slideshow -->
-						<li><img src="img/slide3.jpg"/></li>
-						<li><img src="img/slide2.jpg"/></li>
-						<li><img src="img/slide1.jpg"/></li> <!-- This is the first image in the slideshow -->
-					</ul>
-					<span class="mask left"></span>
-					<span class="mask right"></span>
-			</div>
-			<div class="bannerNormal">
-				<div class="bannerCentered">
-					<div class="pager">
-						<a id="fssNext" class="previous"></a>
-						<a id="fssPrev" class="next"></a>
-					</div>
-					<div class="bannerHeading">
-						<ul id="headings">
-							<li>
-								<h1>Bringing the<br>Farmers Market<br>to You</h1>
-							</li>
-						
-							<li style="opacity: 0;">
-								<h1>Direct from local farms within 48 hours of harvest</h1>
-							</li>
-						
-							<li style="opacity: 0;">
-								<h1>A collection of fresh produce from multiple farms</h1>
-							</li>
-						
-							<li style="opacity: 0;">
-								<h1>Order online with free delivery to your workplace</h1>
-							</li>
-							
-						</ul>
-						<a class="callToAction large-button" href="../Auth/login.php">Get Started</a>
-					</div>
+		
+		
+		<div class="subHeader headerCommon">
+			<div class="container">					
+				<div class="curls centeredCurl">
+					Help
 				</div>
-			</div>			
+			</div>
 			<div class="clear"></div>				
 		</div>
 		
 		<div id="page">
-		
+			
+			
 			<div class="tabContent">
-				<div class="container">
-				<div class="centeredHighlights">
-					<div class="highlight ">
-						<div class="highlightImageContainer">
-							<img alt="" height="203" src="img/yourWay.png" width="203">
-						</div>
-						<div class="highlightTextContainer">
-							<div class="highlightTitles">
-								<h2 class="title3">Your Way</h2>
-							</div>
-							<p>
-								To make filing your taxes as convenient as possible, we give you the choice of:
-							</p>
-							<p>
-								<span>﻿ </span>
-							</p>
-							<p>
-								- Face-to-Face
-							</p>
-							<p>
-								- Email
-							</p>
-							<p>
-								- Tel/Fax
-							</p>
-							<p>
-								- Online
-							</p>
-							<p>
-								- Mobile Service
-							</p>						
-							<div class="highlightLink">
-								<a class="link3" href="/yourWay.php">Learn more ...</a>
-							</div>
-						</div>
-					</div>
+				<div class="container tabMore">
+					<h2 class="titleh2"><a name="top"> Questions </a></h2>
+					<ol class="faqList">
+						<li>
+							<a href="#question1">
+							What are the differnt filing options Taxes2go provides for me?
+							</a>
+						</li>
+						<li>Question 2</li>
+						<li>Question 3</li>
+						<li>Question 4</li>
+						<li>Question 5</li>
+						<li>Question 6</li>					
+					</ol>
 					
-					<div class="highlight ">
-						<div class="highlightImageContainer">
-							<img alt="" height="203" src="img/taxRes.png" width="203">
-						</div>
-						<div class="highlightTextContainer">
-							<div class="highlightTitles">
-								<h2 class="title3">Tax Resources</h2>
-							</div>
-							<p>
-								Never worry about managing your tax resources ever again. We will take good care of you and make sure you have quick access to anything that will get you your money back.
-							</p>					
-							<div class="highlightLink">
-								<a class="link3" href="/taxResources.php">Learn more ...</a>
-							</div>
-						</div>
-					</div>
+					<p><span>﻿ </span></p>					
 					
-					<div class="highlight ">
-						<div class="highlightImageContainer">
-							<img alt="" height="203" src="img/Features_LiveTiles.png" width="203">
-						</div>
-						<div class="highlightTextContainer">
-							<div class="highlightTitles">
-								<h2 class="title3">Refer a Friend</h2>
-							</div>
-							<p>
-								<strong> Earn $20 </strong>
-							</p>
-							<p>
-								Get money the easy way.  For each person you refer that completes a fully funded tax return, you earn $20. How much you earn is up to you, so the sky's the limit!
-							</p>					
-							<div class="highlightLink">
-								<a class="link3" href="/aboutUs.php">Learn more ...</a>
-							</div>
-						</div>
-					</div>				
-				</div>
+					<h2 class="titleh2"> Answers </h2>
+					<h3 class="titleh3"> 
+						<a name="question1"> 
+							What are the differnt filing options Taxes2go provides for me? 
+						</a>
+					</h3>
+					<p><span>﻿ </span></p>					
+					<p>
+						We make filing your taxes easy, by giving you the following options:
+					</p>
+					<p><span>﻿ </span></p>	
+					<p> 
+						<strong> In Office </strong> - Face to face interview in our office with an experience tax consultant.
+					</p>
+					<p> <a> Location: </a> </p>
+					<p> 5220 Austell Road, </p>
+					<p> Ste E </p>
+					<p> Austell, GA, 30106 </p>
+					<p><span>﻿ </span></p>	
+					<p> 
+						<strong> Email/Fax </strong> - Email or Fax your tax documents and a tax professional will contact you within an hour to discuss your income taxes.
+					</p>
+					<p> Email: 
+						<a href="mailto:service@taxes2go.com">service@taxes2go.com </a>
+					</p>
+					<p> Fax: <a> (404 745-8778 </a> </p>
+					<p><span>﻿ </span></p>	
+					<p>
+						<strong> Online </strong> - Upload your tax documents to our secured web server and a tax specialist will contact you within an hour to discuss your income taxes.
+					</p>
+					<p> <a href="../Auth/login.php"> Go here to get started </a> </p>
+					<p><span>﻿ </span></p>	
+					<p> 
+						<strong> Mobile service </strong> - Pick-up and delivery service is available in a limited area.
+					</p>
+					<p> <a> Call us for details </a> </p>
+					<p><span>﻿ </span></p>
+					<p><a href="#top">Return to top</a></p>					
 				</div>
 			</div>
 		</div>

@@ -17,13 +17,6 @@
 
 	<!-- THE SCRIPT -->
 	<!-- <script type="text/javascript" src="CustomHome.js"></script> -->
-		<script type="text/javascript" src="js/jquery.js"></script>
-		<script type="text/javascript" src="js/fadeSlideShow.js"></script>
-		<script type="text/javascript">
-		jQuery(document).ready(function(){
-			jQuery('#slides').fadeSlideShow();
-		});
-		</script>	
 </head>
 
 <!-- THE BODY -->
@@ -76,32 +69,32 @@
 							<ul class="navHover">
 								<li><a class="hoverNaviLink" href="2"> Team </a></li>
 								<li><a class="hoverNaviLink" href="3"> Privacy Policy </a></li>
-								<li><a class="hoverNaviLink" href="4"> Disclaimer </a></li>	
-								<li><a class="hoverNaviLink" href="4"> Contact Us </a></li>								
+								<li><a class="hoverNaviLink" href="4"> Disclaimer </a></li>								
 							</ul>							
 						</li>		
 						<li class="litLab naviItem" style="display:block">
 							<a href="index.html" class="naviLogoLink naviLink">
 								<i class="naviImage"></i>
-								FAQ
-							</a>							
+								Help
+								<span class="downCaret"></span>
+							</a>
+							<ul class="navHover">
+								<li><a class="hoverNaviLink" href="1"> FAQ </a></li>
+								<li><a class="hoverNaviLink" href="2"> Contact Us </a></li>
+							</ul>							
 						</li>							
 					</ul>					
 
 					<!-- The right elements on the top bar -->
 					<ul class="navRight">		
-						<li class="dropDown naviItem" style="display:block">
-							<a class="dropDownLink naviLink" href="../Client/portal.php" id="AccountLink">
-								Portal
-								<span class="downCaret"></span>
-							</a>
-							<ul class="navHover">
-								<li><a class="hoverNaviLink" href="../Client/profile.php"> Profile </a></li>
-								<li><a class="hoverNaviLink" href="../Auth/logout.php"> Logout </a></li>
-							</ul>							
-						</li>												
 						<li class="dropDown naviItem" style="display:none">
-							<a class="dropDownLink naviLink" href="../Auth/login.php" id="signInLink">
+							<a class="dropDownLink naviLink" href="" id="AccountLink">
+								Account
+								<span class="caret"></span>
+							</a>					
+						</li>						
+						<li class="dropDown naviItem" style="display:block">
+							<a class="dropDownLink naviLink" href="" id="signInLink">
 								Login
 								<span class="rightCaret"></span>
 							</a>					
@@ -111,53 +104,17 @@
 			</div>
 		</div>
 		
-		<div class="banner">
-			<div class="bannerWide">					
-					<ul id="slides">
-						<li><img src="img/slide5.jpg"/></li> <!-- This is the last image in the slideshow -->
-						<li><img src="img/slide3.jpg"/></li>
-						<li><img src="img/slide2.jpg"/></li>
-						<li><img src="img/slide1.jpg"/></li> <!-- This is the first image in the slideshow -->
-					</ul>
-					<span class="mask left"></span>
-					<span class="mask right"></span>
+		<div class="mainHeader headerCommon">
+			<div class="container">					
+				<span class="subTitleCommon mainSubTitle">
+					Welcome
+				</span>
 			</div>
-			<div class="bannerNormal">
-				<div class="bannerCentered">
-					<div class="pager">
-						<a id="fssNext" class="previous"></a>
-						<a id="fssPrev" class="next"></a>
-					</div>
-					<div class="bannerHeading">
-						<ul id="headings">
-							<li>
-								<h1>Bringing the<br>Farmers Market<br>to You</h1>
-							</li>
-						
-							<li style="opacity: 0;">
-								<h1>Direct from local farms within 48 hours of harvest</h1>
-							</li>
-						
-							<li style="opacity: 0;">
-								<h1>A collection of fresh produce from multiple farms</h1>
-							</li>
-						
-							<li style="opacity: 0;">
-								<h1>Order online with free delivery to your workplace</h1>
-							</li>
-							
-						</ul>
-						<a class="callToAction large-button" href="../Auth/login.php">Get Started</a>
-					</div>
-				</div>
-			</div>			
 			<div class="clear"></div>				
 		</div>
 		
 		<div id="page">
-		
-			<div class="tabContent">
-				<div class="container">
+			<div class="container">
 				<div class="centeredHighlights">
 					<div class="highlight ">
 						<div class="highlightImageContainer">
@@ -230,7 +187,6 @@
 							</div>
 						</div>
 					</div>				
-				</div>
 				</div>
 			</div>
 		</div>
