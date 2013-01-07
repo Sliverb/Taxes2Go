@@ -123,11 +123,12 @@ i{
 
 .mainLogo{
 	text-decoration: none;
-	background: url(../img/PandaLogo.png) no-repeat;
-	width: 194px;
-	height: 31px;
+	background: url(../img/T2goLogo.png) no-repeat;
+	width: 140px;
+	height: 28px;
 	display: inline-block;
 	margin-top: 9px;
+	margin-right: 10px;
 }
 
 .naviImage{
@@ -654,7 +655,7 @@ i{
 	top: 38%;
 	width: 52px;
 	height: 52px;
-	background-image: url("http://www.farmigo.com/site/farmigo.com/images/sprite.png?1262");
+	background-image: url("../img/navIcons.png");
 	cursor: pointer;
 }
 
@@ -672,20 +673,20 @@ i{
 
 .previous {
 	left: -72px;
-	background-position: 0 -420px;
+	background-position: 0 -455px;
 }
 
 .previous:hover {
-	background-position: -60px -420px;
+	background-position: -60px -455px;
 }
 
 .next {
 	right: -72px;
-	background-position: -120px -420px;
+	background-position: -120px -455px;
 }
 
 .next:hover{
-	background-position: -180px -420px;
+	background-position: -180px -455px;
 }
 .bannerHeading {
 	top: 65px;
@@ -703,4 +704,12 @@ i{
 	font-weight: 700;
 	color: #141414;
 	text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.4);
+}
+
+.bannerCaption{
+	position: absolute;
+	bottom: 0;
+	padding: 13px 0 9px;
+	color: white;
+	zoom: 1;
 }

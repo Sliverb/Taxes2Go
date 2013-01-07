@@ -38,6 +38,13 @@ $page = $pathComponents[1];
 
 	<!-- THE SCRIPT -->
 	<!-- <script type="text/javascript" src="CustomHome.js"></script> -->
+		<script type="text/javascript" src="js/jquery.js"></script>
+		<script type="text/javascript" src="js/fadeSlideShow.js"></script>
+		<script type="text/javascript">
+		jQuery(document).ready(function(){
+			jQuery('#slides').fadeSlideShow();
+		});
+		</script>	
 </head>
 
 <!-- THE BODY -->
@@ -50,8 +57,7 @@ $page = $pathComponents[1];
 				<div class="container">
 					<!-- The left elements on the top bar -->
 					<div class="navLeft">
-						<a class="mainLogo" href="../home.php">
-						TAXES2GO
+						<a class="mainLogo" href="../index.php">
 						</a>
 					</div> 				
 					<!-- The center elements on the top bar -->

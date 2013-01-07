@@ -27,7 +27,7 @@ jQuery.fn.fadeSlideShow = function(options) {
      		width: 1600, // default width of the slideshow
      		height: 482, // default height of the slideshow
 			speed: 'slow', // default animation transition speed
-			interval: 3000, // default interval between image change
+			interval: 6000, // default interval between image change
 			PlayPauseElement: false, // default css id for the play / pause element
 			PlayText: 'Play', // default play text
 			PauseText: 'Pause', // default pause text
@@ -38,8 +38,9 @@ jQuery.fn.fadeSlideShow = function(options) {
 			ListElement: false, // default id for image / content controll list
 			ListLi: 'fssList', // default class for li's in the image / content controll 
 			ListLiActive: 'fssActive', // default class for active state in the controll list
+			HeadingsElement: 'headings', // default id for heading text that goes with each image
 			addListToId: false, // add the controll list to special id in your code - default false
-			allowKeyboardCtrl: true, // allow keyboard controlls left / right / space
+			allowKeyboardCtrl: false, // allow keyboard controlls left / right / space
 			autoplay: true // autoplay the slideshow
 	 	}, options);
 		
@@ -58,18 +59,29 @@ jQuery.fn.fadeSlideShow = function(options) {
 			height: settings.height
 		});
 		
+		// set styles for the companion header child element
+		jQuery('> *','#'+settings.HeadingsElement).css({
+			opacity: 0,
+		});		
+		
 		// count number of slides
 		var Slides = jQuery('> *', this).length;
 		Slides = Slides - 1;
 		var ActSlide = Slides;
-		// Set jQuery Slide short var
+		// Set jQuery Slide short var and headings var
 		var jQslide = jQuery('> *', this);
+		var JQheadings = jQuery('> *','#'+settings.HeadingsElement);
+		JQheadings.eq(ActSlide).css({opacity: 1});
 		// save this
 		var fssThis = this;
+		var fshThis = '#'+settings.HeadingsElement;
 		var intval = false;
 		var autoplay = function(){
 			intval = setInterval(function(){
 				jQslide.eq(ActSlide).fadeOut(settings.speed);
+				// hide the current heading text
+				JQheadings.eq(ActSlide).animate({opacity: 0}, settings.speed);
+				JQheadings.eq(ActSlide-1).animate({opacity: 1}, settings.speed);
 				
 				// if list is on change the active class
 				if(settings.ListElement){
@@ -109,6 +121,8 @@ jQuery.fn.fadeSlideShow = function(options) {
 				jQuery('> *:gt('+newIndex+')', fssThis).fadeOut(settings.speed);
 			}
 			
+			JQheadings.eq(ActSlide).animate({opacity: 0}, settings.speed);
+			JQheadings.eq(newIndex).animate({opacity: 1}, settings.speed);
 			// set the active slide
 			ActSlide = newIndex;
 
@@ -179,7 +193,7 @@ jQuery.fn.fadeSlideShow = function(options) {
 			
 			jQuery('#'+settings.NextElement).bind('click', function(){
 				nextSlide = ActSlide-1;
-				stopAutoplay();
+				//stopAutoplay();
 				jumpTo(nextSlide);
 				return false;
 			});
@@ -192,7 +206,7 @@ jQuery.fn.fadeSlideShow = function(options) {
 			
 			jQuery('#'+settings.PrevElement).bind('click', function(){
 				prevSlide = ActSlide+1;
-				stopAutoplay();
+				//stopAutoplay();
 				jumpTo(prevSlide);
 				return false;
 			});
